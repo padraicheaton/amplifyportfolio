@@ -1,0 +1,28 @@
+.landingPage {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landingPage img {
+  max-height: 200px;
+  margin-bottom: 5em;
+  border-radius: 50%;
+}
+
+.landingPage .nameCard {
+  width: 100%;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.landingPage.animate img {
+  -webkit-animation: slideInRight 1s;
+          animation: slideInRight 1s;
+}
+
+.landingPage.animate .nameCard {
+  -webkit-animation: slideInLeft 1s;
+          animation: slideInLeft 1s;
+}
+/*# sourceMappingURL=landingPage.css.map */

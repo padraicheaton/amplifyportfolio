@@ -1,0 +1,26 @@
+.landingPage {
+    justify-content: center;
+
+    img {
+        max-height: 200px;
+        margin-bottom: 5em;
+        border-radius: 50%;
+    }
+
+    .nameCard {
+        width: 100%;
+        padding: 2em;
+
+        background-color: rgba(0,0,0,0.1);
+    }
+}
+
+.landingPage.animate {
+    img {
+        animation: slideInRight 1s;
+    }
+
+    .nameCard {
+        animation: slideInLeft 1s;
+    }
+}

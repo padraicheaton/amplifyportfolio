@@ -1,0 +1,9 @@
+.projectsPage {
+  height: 90%;
+}
+
+.projectsPage.animate {
+  -webkit-animation: slideInRight 1s;
+          animation: slideInRight 1s;
+}
+/*# sourceMappingURL=projectsPage.css.map */

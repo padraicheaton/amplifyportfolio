@@ -1,0 +1,38 @@
+.aboutPage {
+  height: 90%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.aboutPage h2 {
+  margin-bottom: 2em;
+}
+
+.aboutPage p {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  margin: 0.5em;
+  padding: 1em;
+  text-align: justify;
+}
+
+.aboutPage img {
+  max-width: 70%;
+}
+
+.aboutPage.animate h2 {
+  -webkit-animation: slideInRight 1s;
+          animation: slideInRight 1s;
+}
+
+.aboutPage.animate p {
+  -webkit-animation: slideInLeft 1s;
+          animation: slideInLeft 1s;
+}
+
+.aboutPage.animate img {
+  -webkit-animation: slideInRight 1s;
+          animation: slideInRight 1s;
+}
+/*# sourceMappingURL=aboutPage.css.map */

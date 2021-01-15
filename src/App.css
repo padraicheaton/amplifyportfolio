@@ -1,38 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background: #0f2027;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hide {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.page {
+  height: 100vh;
+  width: 100%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+
+  
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #b5c2c7 !important;
 }
 
-@keyframes App-logo-spin {
+.slideInRight {
+  animation: slideInRight 1s;
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s;
+}
+
+@keyframes slideInRight {
   from {
-    transform: rotate(0deg);
+      opacity: 0;
+      transform: translateX(-200px);
   }
+
   to {
-    transform: rotate(360deg);
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(200px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateX(0);
   }
 }

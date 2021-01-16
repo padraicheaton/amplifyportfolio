@@ -55,15 +55,15 @@
 }
 
 .fp-controlArrow.fp-next {
-    border-width: 19.25px 0 19.25px 17px;
-    border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);
-    animation: nextArrow 1s ease-out 0s infinite alternate;
+    border-width: 19.25px 0 19.25px 17px !important;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.3) !important;
+    animation: nextArrow 1s ease-out 0s infinite alternate !important;
 }
 
 .fp-controlArrow.fp-prev {
-    border-width: 19.25px 17px 19.25px 0;
-    border-color: transparent rgba(255, 255, 255, 0.3) transparent transparent;
-    animation: prevArrow 1s ease-out 0s infinite alternate;
+    border-width: 19.25px 17px 19.25px 0 !important;
+    border-color: transparent rgba(255, 255, 255, 0.3) transparent transparent !important;
+    animation: prevArrow 1s ease-out 0s infinite alternate !important;
 }
 
 @keyframes nextArrow {

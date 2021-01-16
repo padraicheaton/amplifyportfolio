@@ -1,9 +1,355 @@
 .projectsPage {
-  height: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.projectsPage.animate {
+.projectsPage .title {
+  margin-top: 2em;
+}
+
+.projectsPage .project {
+  height: 80%;
+  width: 90%;
+  margin: 0 5%;
+  margin-bottom: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 0.7em;
+}
+
+.projectsPage .project h4 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.projectsPage .project img {
+  max-width: 308px;
+}
+
+.projectsPage .project p {
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+.projectsPage .slide.active .project > * {
+  visibility: hidden;
+  -webkit-animation: hopIn 500ms linear;
+          animation: hopIn 500ms linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.projectsPage .slide.active .project > *:nth-child(1) {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(2) {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(3) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(4) {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(5) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(6) {
+  -webkit-animation-delay: 1250ms;
+          animation-delay: 1250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(7) {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(8) {
+  -webkit-animation-delay: 1750ms;
+          animation-delay: 1750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(9) {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(10) {
+  -webkit-animation-delay: 2250ms;
+          animation-delay: 2250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(11) {
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(12) {
+  -webkit-animation-delay: 2750ms;
+          animation-delay: 2750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(13) {
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(14) {
+  -webkit-animation-delay: 3250ms;
+          animation-delay: 3250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(15) {
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(16) {
+  -webkit-animation-delay: 3750ms;
+          animation-delay: 3750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(17) {
+  -webkit-animation-delay: 4000ms;
+          animation-delay: 4000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(18) {
+  -webkit-animation-delay: 4250ms;
+          animation-delay: 4250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(19) {
+  -webkit-animation-delay: 4500ms;
+          animation-delay: 4500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(20) {
+  -webkit-animation-delay: 4750ms;
+          animation-delay: 4750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(21) {
+  -webkit-animation-delay: 5000ms;
+          animation-delay: 5000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(22) {
+  -webkit-animation-delay: 5250ms;
+          animation-delay: 5250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(23) {
+  -webkit-animation-delay: 5500ms;
+          animation-delay: 5500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(24) {
+  -webkit-animation-delay: 5750ms;
+          animation-delay: 5750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(25) {
+  -webkit-animation-delay: 6000ms;
+          animation-delay: 6000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(26) {
+  -webkit-animation-delay: 6250ms;
+          animation-delay: 6250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(27) {
+  -webkit-animation-delay: 6500ms;
+          animation-delay: 6500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(28) {
+  -webkit-animation-delay: 6750ms;
+          animation-delay: 6750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(29) {
+  -webkit-animation-delay: 7000ms;
+          animation-delay: 7000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(30) {
+  -webkit-animation-delay: 7250ms;
+          animation-delay: 7250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(31) {
+  -webkit-animation-delay: 7500ms;
+          animation-delay: 7500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(32) {
+  -webkit-animation-delay: 7750ms;
+          animation-delay: 7750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(33) {
+  -webkit-animation-delay: 8000ms;
+          animation-delay: 8000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(34) {
+  -webkit-animation-delay: 8250ms;
+          animation-delay: 8250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(35) {
+  -webkit-animation-delay: 8500ms;
+          animation-delay: 8500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(36) {
+  -webkit-animation-delay: 8750ms;
+          animation-delay: 8750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(37) {
+  -webkit-animation-delay: 9000ms;
+          animation-delay: 9000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(38) {
+  -webkit-animation-delay: 9250ms;
+          animation-delay: 9250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(39) {
+  -webkit-animation-delay: 9500ms;
+          animation-delay: 9500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(40) {
+  -webkit-animation-delay: 9750ms;
+          animation-delay: 9750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(41) {
+  -webkit-animation-delay: 10000ms;
+          animation-delay: 10000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(42) {
+  -webkit-animation-delay: 10250ms;
+          animation-delay: 10250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(43) {
+  -webkit-animation-delay: 10500ms;
+          animation-delay: 10500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(44) {
+  -webkit-animation-delay: 10750ms;
+          animation-delay: 10750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(45) {
+  -webkit-animation-delay: 11000ms;
+          animation-delay: 11000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(46) {
+  -webkit-animation-delay: 11250ms;
+          animation-delay: 11250ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(47) {
+  -webkit-animation-delay: 11500ms;
+          animation-delay: 11500ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(48) {
+  -webkit-animation-delay: 11750ms;
+          animation-delay: 11750ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(49) {
+  -webkit-animation-delay: 12000ms;
+          animation-delay: 12000ms;
+}
+
+.projectsPage .slide.active .project > *:nth-child(50) {
+  -webkit-animation-delay: 12250ms;
+          animation-delay: 12250ms;
+}
+
+.fp-controlArrow.fp-next {
+  border-width: 19.25px 0 19.25px 17px;
+}
+
+.fp-controlArrow.fp-prev {
+  border-width: 19.25px 17px 19.25px 0;
+}
+
+.projectsPage.animate .title {
   -webkit-animation: slideInRight 1s;
           animation: slideInRight 1s;
+}
+
+.projectsPage.animate .project {
+  -webkit-animation: slideInLeft 1s;
+          animation: slideInLeft 1s;
+}
+
+@-webkit-keyframes hopIn {
+  from {
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes hopIn {
+  from {
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 /*# sourceMappingURL=projectsPage.css.map */

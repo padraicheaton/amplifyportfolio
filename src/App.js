@@ -16,6 +16,9 @@ function App() {
         licenseKey = '253C1471-AC944259-A28BD0E8-0AF8AD7D'
         continuousVertical = {true}
         navigation = {true}
+        navigationPosition = {'right'}
+        controlArrows = {true}
+        recordHistory = {false}
         anchors = {['landingPage', 'aboutPage', 'projectsPage']}
 
         onLeave = {(origin, destination, direction) => {

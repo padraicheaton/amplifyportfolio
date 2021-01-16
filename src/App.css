@@ -39,6 +39,20 @@ body {
   background: #b5c2c7 !important;
 }
 
+#fp-nav {
+  width: auto !important;
+  top: auto !important;
+  bottom: 10px;
+  right: 50% !important;
+  transform: translate3d(50%, 0, 0) !important;
+}
+
+#fp-nav ul{
+  vertical-align: baseline;
+  display: flex;
+  align-items: flex-end;
+}
+
 .slideInRight {
   animation: slideInRight 1s;
 }

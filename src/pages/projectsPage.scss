@@ -55,10 +55,34 @@
 
 .fp-controlArrow.fp-next {
     border-width: 19.25px 0 19.25px 17px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);
+    animation: nextArrow 1s ease-out 0s infinite alternate;
 }
 
 .fp-controlArrow.fp-prev {
     border-width: 19.25px 17px 19.25px 0;
+    border-color: transparent rgba(255, 255, 255, 0.3) transparent transparent;
+    animation: prevArrow 1s ease-out 0s infinite alternate;
+}
+
+@keyframes nextArrow {
+    from {
+        right: 12px;
+    }
+
+    to {
+        right: 10px;
+    }
+}
+
+@keyframes prevArrow {
+    from {
+        left: 12px;
+    }
+
+    to {
+        left: 10px;
+    }
 }
 
 .projectsPage.animate {

@@ -307,10 +307,52 @@
 
 .fp-controlArrow.fp-next {
   border-width: 19.25px 0 19.25px 17px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.3);
+  -webkit-animation: nextArrow 1s ease-out 0s infinite alternate;
+          animation: nextArrow 1s ease-out 0s infinite alternate;
 }
 
 .fp-controlArrow.fp-prev {
   border-width: 19.25px 17px 19.25px 0;
+  border-color: transparent rgba(255, 255, 255, 0.3) transparent transparent;
+  -webkit-animation: prevArrow 1s ease-out 0s infinite alternate;
+          animation: prevArrow 1s ease-out 0s infinite alternate;
+}
+
+@-webkit-keyframes nextArrow {
+  from {
+    right: 12px;
+  }
+  to {
+    right: 10px;
+  }
+}
+
+@keyframes nextArrow {
+  from {
+    right: 12px;
+  }
+  to {
+    right: 10px;
+  }
+}
+
+@-webkit-keyframes prevArrow {
+  from {
+    left: 12px;
+  }
+  to {
+    left: 10px;
+  }
+}
+
+@keyframes prevArrow {
+  from {
+    left: 12px;
+  }
+  to {
+    left: 10px;
+  }
 }
 
 .projectsPage.animate .title {

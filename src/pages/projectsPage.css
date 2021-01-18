@@ -1,19 +1,90 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  /*this gives the dimension of slider container*/
+  /*these values will make the container as big as the parent div*/
+  overflow: hidden;
+  /*important parameter to not disrupt the container when slides increases in coverflow and other effect*/
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 300px;
+  /*this one holds the dimension of each slides and can be changed according to the user wish*/
+}
+
 .projectsPage {
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .projectsPage .title {
   margin-top: 2em;
 }
 
-.projectsPage .project {
+.projectsPage .container {
   height: 80%;
   width: 90%;
-  margin: 0 5%;
-  margin-bottom: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsPage .btnContainer {
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projectsPage .customBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 50%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.projectsPage .leftBorder {
+  border-left: solid black;
+}
+
+.projectsPage .rightBorder {
+  border-right: solid black;
+}
+
+.projectsPage .project {
+  height: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,6 +101,7 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 30px;
   padding: 0.7em;
+  border-bottom: solid black;
 }
 
 .projectsPage .project h4 {
@@ -47,262 +119,262 @@
   font-size: 0.9em;
 }
 
-.projectsPage .slide.active .project > * {
+.projectsPage .container .project[anim="1"] > * {
   visibility: hidden;
-  -webkit-animation: hopIn 500ms linear;
-          animation: hopIn 500ms linear;
+  -webkit-animation: hopIn 250ms ease-out;
+          animation: hopIn 250ms ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.projectsPage .slide.active .project > *:nth-child(1) {
+.projectsPage .container .project[anim="1"] > *:nth-child(1) {
   -webkit-animation-delay: 0ms;
           animation-delay: 0ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(2) {
-  -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(2) {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(3) {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(4) {
+.projectsPage .container .project[anim="1"] > *:nth-child(4) {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(5) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(6) {
   -webkit-animation-delay: 750ms;
           animation-delay: 750ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(5) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(7) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(6) {
-  -webkit-animation-delay: 1250ms;
-          animation-delay: 1250ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(8) {
+  -webkit-animation-delay: 1050ms;
+          animation-delay: 1050ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(7) {
+.projectsPage .container .project[anim="1"] > *:nth-child(9) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(10) {
+  -webkit-animation-delay: 1350ms;
+          animation-delay: 1350ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(11) {
   -webkit-animation-delay: 1500ms;
           animation-delay: 1500ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(8) {
-  -webkit-animation-delay: 1750ms;
-          animation-delay: 1750ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(12) {
+  -webkit-animation-delay: 1650ms;
+          animation-delay: 1650ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(9) {
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(13) {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(10) {
+.projectsPage .container .project[anim="1"] > *:nth-child(14) {
+  -webkit-animation-delay: 1950ms;
+          animation-delay: 1950ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(15) {
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(16) {
   -webkit-animation-delay: 2250ms;
           animation-delay: 2250ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(11) {
-  -webkit-animation-delay: 2500ms;
-          animation-delay: 2500ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(17) {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(12) {
-  -webkit-animation-delay: 2750ms;
-          animation-delay: 2750ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(18) {
+  -webkit-animation-delay: 2550ms;
+          animation-delay: 2550ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(13) {
+.projectsPage .container .project[anim="1"] > *:nth-child(19) {
+  -webkit-animation-delay: 2700ms;
+          animation-delay: 2700ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(20) {
+  -webkit-animation-delay: 2850ms;
+          animation-delay: 2850ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(21) {
   -webkit-animation-delay: 3000ms;
           animation-delay: 3000ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(14) {
-  -webkit-animation-delay: 3250ms;
-          animation-delay: 3250ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(22) {
+  -webkit-animation-delay: 3150ms;
+          animation-delay: 3150ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(15) {
-  -webkit-animation-delay: 3500ms;
-          animation-delay: 3500ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(23) {
+  -webkit-animation-delay: 3300ms;
+          animation-delay: 3300ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(16) {
+.projectsPage .container .project[anim="1"] > *:nth-child(24) {
+  -webkit-animation-delay: 3450ms;
+          animation-delay: 3450ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(25) {
+  -webkit-animation-delay: 3600ms;
+          animation-delay: 3600ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(26) {
   -webkit-animation-delay: 3750ms;
           animation-delay: 3750ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(17) {
-  -webkit-animation-delay: 4000ms;
-          animation-delay: 4000ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(27) {
+  -webkit-animation-delay: 3900ms;
+          animation-delay: 3900ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(18) {
-  -webkit-animation-delay: 4250ms;
-          animation-delay: 4250ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(28) {
+  -webkit-animation-delay: 4050ms;
+          animation-delay: 4050ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(19) {
+.projectsPage .container .project[anim="1"] > *:nth-child(29) {
+  -webkit-animation-delay: 4200ms;
+          animation-delay: 4200ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(30) {
+  -webkit-animation-delay: 4350ms;
+          animation-delay: 4350ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(31) {
   -webkit-animation-delay: 4500ms;
           animation-delay: 4500ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(20) {
-  -webkit-animation-delay: 4750ms;
-          animation-delay: 4750ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(32) {
+  -webkit-animation-delay: 4650ms;
+          animation-delay: 4650ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(21) {
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(33) {
+  -webkit-animation-delay: 4800ms;
+          animation-delay: 4800ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(22) {
+.projectsPage .container .project[anim="1"] > *:nth-child(34) {
+  -webkit-animation-delay: 4950ms;
+          animation-delay: 4950ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(35) {
+  -webkit-animation-delay: 5100ms;
+          animation-delay: 5100ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(36) {
   -webkit-animation-delay: 5250ms;
           animation-delay: 5250ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(23) {
-  -webkit-animation-delay: 5500ms;
-          animation-delay: 5500ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(37) {
+  -webkit-animation-delay: 5400ms;
+          animation-delay: 5400ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(24) {
-  -webkit-animation-delay: 5750ms;
-          animation-delay: 5750ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(38) {
+  -webkit-animation-delay: 5550ms;
+          animation-delay: 5550ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(25) {
+.projectsPage .container .project[anim="1"] > *:nth-child(39) {
+  -webkit-animation-delay: 5700ms;
+          animation-delay: 5700ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(40) {
+  -webkit-animation-delay: 5850ms;
+          animation-delay: 5850ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(41) {
   -webkit-animation-delay: 6000ms;
           animation-delay: 6000ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(26) {
-  -webkit-animation-delay: 6250ms;
-          animation-delay: 6250ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(42) {
+  -webkit-animation-delay: 6150ms;
+          animation-delay: 6150ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(27) {
-  -webkit-animation-delay: 6500ms;
-          animation-delay: 6500ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(43) {
+  -webkit-animation-delay: 6300ms;
+          animation-delay: 6300ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(28) {
+.projectsPage .container .project[anim="1"] > *:nth-child(44) {
+  -webkit-animation-delay: 6450ms;
+          animation-delay: 6450ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(45) {
+  -webkit-animation-delay: 6600ms;
+          animation-delay: 6600ms;
+}
+
+.projectsPage .container .project[anim="1"] > *:nth-child(46) {
   -webkit-animation-delay: 6750ms;
           animation-delay: 6750ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(29) {
-  -webkit-animation-delay: 7000ms;
-          animation-delay: 7000ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(47) {
+  -webkit-animation-delay: 6900ms;
+          animation-delay: 6900ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(30) {
-  -webkit-animation-delay: 7250ms;
-          animation-delay: 7250ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(48) {
+  -webkit-animation-delay: 7050ms;
+          animation-delay: 7050ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(31) {
-  -webkit-animation-delay: 7500ms;
-          animation-delay: 7500ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(49) {
+  -webkit-animation-delay: 7200ms;
+          animation-delay: 7200ms;
 }
 
-.projectsPage .slide.active .project > *:nth-child(32) {
-  -webkit-animation-delay: 7750ms;
-          animation-delay: 7750ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(33) {
-  -webkit-animation-delay: 8000ms;
-          animation-delay: 8000ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(34) {
-  -webkit-animation-delay: 8250ms;
-          animation-delay: 8250ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(35) {
-  -webkit-animation-delay: 8500ms;
-          animation-delay: 8500ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(36) {
-  -webkit-animation-delay: 8750ms;
-          animation-delay: 8750ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(37) {
-  -webkit-animation-delay: 9000ms;
-          animation-delay: 9000ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(38) {
-  -webkit-animation-delay: 9250ms;
-          animation-delay: 9250ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(39) {
-  -webkit-animation-delay: 9500ms;
-          animation-delay: 9500ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(40) {
-  -webkit-animation-delay: 9750ms;
-          animation-delay: 9750ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(41) {
-  -webkit-animation-delay: 10000ms;
-          animation-delay: 10000ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(42) {
-  -webkit-animation-delay: 10250ms;
-          animation-delay: 10250ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(43) {
-  -webkit-animation-delay: 10500ms;
-          animation-delay: 10500ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(44) {
-  -webkit-animation-delay: 10750ms;
-          animation-delay: 10750ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(45) {
-  -webkit-animation-delay: 11000ms;
-          animation-delay: 11000ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(46) {
-  -webkit-animation-delay: 11250ms;
-          animation-delay: 11250ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(47) {
-  -webkit-animation-delay: 11500ms;
-          animation-delay: 11500ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(48) {
-  -webkit-animation-delay: 11750ms;
-          animation-delay: 11750ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(49) {
-  -webkit-animation-delay: 12000ms;
-          animation-delay: 12000ms;
-}
-
-.projectsPage .slide.active .project > *:nth-child(50) {
-  -webkit-animation-delay: 12250ms;
-          animation-delay: 12250ms;
+.projectsPage .container .project[anim="1"] > *:nth-child(50) {
+  -webkit-animation-delay: 7350ms;
+          animation-delay: 7350ms;
 }
 
 .fp-controlArrow.fp-next {
@@ -366,13 +438,13 @@
 }
 
 @-webkit-keyframes hopIn {
-  from {
+  0% {
     -webkit-transform: translate3d(0, 40px, 0);
             transform: translate3d(0, 40px, 0);
     opacity: 0;
     visibility: visible;
   }
-  to {
+  100% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -381,13 +453,13 @@
 }
 
 @keyframes hopIn {
-  from {
+  0% {
     -webkit-transform: translate3d(0, 40px, 0);
             transform: translate3d(0, 40px, 0);
     opacity: 0;
     visibility: visible;
   }
-  to {
+  100% {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     opacity: 1;

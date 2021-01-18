@@ -8,7 +8,6 @@ import AboutPage from './pages/aboutPage';
 import ProjectsPage from './pages/projectsPage';
 
 function App() {
-
   return (
     <ReactFullpage 
     
@@ -25,6 +24,8 @@ function App() {
           document.getElementById(origin.anchor + "ID").classList.remove("animate");
           document.getElementById(destination.anchor + "ID").classList.add("animate");
         }}
+
+
         
         //Component to render
         render = {({state, fullpageApi}) => {

@@ -1,16 +1,64 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    /*this gives the dimension of slider container*/
+    /*these values will make the container as big as the parent div*/
+    overflow: hidden;
+    /*important parameter to not disrupt the container when slides increases in coverflow and other effect*/
+}
+
+.swiper-slide {
+    width:300px;
+    height:300px;
+    /*this one holds the dimension of each slides and can be changed according to the user wish*/
+}
+
 .projectsPage {
     height: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
 
     .title {
         margin-top: 2em;
     }
 
-    .project {
+    .container {
         height: 80%;
         width: 90%;
-        margin: 0 5%;
-        margin-bottom: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnContainer {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .customBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 50%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .leftBorder {
+        border-left: solid black;
+    }
+
+    .rightBorder {
+        border-right: solid black;
+    }
+
+    .project {
+        height: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -21,6 +69,8 @@
         border-radius: 30px;
 
         padding: 0.7em;
+
+        border-bottom: solid black;
 
         h4 {
             text-transform: uppercase;
@@ -38,15 +88,15 @@
         }
     }
 
-    .slide.active {
-        .project > * {
+    .container {
+        .project[anim="1"] > * {
             visibility: hidden;
-            animation: hopIn 500ms linear;
+            animation: hopIn 250ms ease-out;
             animation-fill-mode: forwards;
 
             @for $i from 1 through 50 {
                 &:nth-child(#{$i}) {
-                  animation-delay: 250ms * ($i - 1);
+                  animation-delay: 150ms * ($i - 1);
                 }
             }
         }
@@ -97,13 +147,13 @@
 }
 
 @keyframes hopIn {
-    from {
+    0% {
         transform: translate3d(0,40px,0);
         opacity: 0;
         visibility: visible;
     }
 
-    to {
+    100% {
         transform: translate3d(0,0,0);
         opacity: 1;
         visibility: visible;
